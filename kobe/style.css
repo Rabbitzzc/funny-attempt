@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+  color: white;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(90deg, #fdb927 50%, #552583 50%);
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-weight: extra-bold;
+  font-size: 200px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.container__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.kobe__text {
+  position: relative;
+}
+
+h1:hover {
+  color: #000;
+}
+h2:hover {
+  color: #000;
+}
+
+.kobe__text-info {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  width: 300px;
+  right: -192px;
+  top: 65%;
+  line-height: 22px;
+}
+
+.kobe__image {
+  position: absolute;
+  left: 50%;
+  margin-left: -170px;
+}
+
+#toggle {
+  display: none;
+  position: absolute;
+  margin: 0 auto;
+}
+#toggle:target{
+	display:block;
+}
+
+#toggle:target + .close{
+	display:block;
+}
+
