@@ -1,0 +1,52 @@
+html,
+body {
+  overflow: hidden;
+  background-color: #232323;
+}
+main {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 水平垂直居中 */
+.blob {
+  margin: auto;
+}
+
+svg {
+  /* 初始原点 */
+  transform-origin: 50% 50%;
+  /* 先加速后减速，但是速度变化小 */
+  animation: jitter 24s ease-in-out infinite;
+}
+
+@keyframes jitter {
+  0% {
+    transform: scale(1) translate(0, 0) rotate(0);
+    fill: #00D69C;
+    /*  增加滤镜 给图像设置一个阴影效果。阴影是合成在图像下面 */
+    filter: drop-shadow(20px 14px 10px rgba(0, 0, 0, .7));
+  }
+  25% {
+      /* 缩小  移动   旋转*/
+    transform: scale(0.8) translate(5vw, 10vh) rotate(55deg);
+    fill: #C52AFC;
+    filter: drop-shadow(14px 14px 6px rgba(0, 0, 0, .7));
+  }
+  50% {
+    transform: scale(0.6) translate(15vw, 5vh) rotate(180deg);
+    fill: #FF1F00;
+    filter: drop-shadow(-16px -16px 16px rgba(0, 0, 0, .7));
+  }
+  75% {
+    transform: scale(0.8) translate(5vw, 10h) rotate(55deg);
+    fill: #FFD600;
+    filter: drop-shadow(14px 14px 6px rgba(0, 0, 0, .7));
+  }
+  100% {
+    transform: scale(1) translate(0, 0) rotate(0);
+    fill: #00D69C;
+    /* filter: drop-shadow(20px 14px 10px rgba(0, 0, 0, .7)); */
+  }
+}
