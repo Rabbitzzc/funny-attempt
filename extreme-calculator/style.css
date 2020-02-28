@@ -244,3 +244,23 @@ input:checked + .slider {
     inset 6px 6px 5px 0 rgba(0, 0, 0, 0.51),
     inset -6px -6px 5px 0 rgba(255, 255, 255, 0.05);
 }
+
+
+/* .title {
+    display: table;
+    width: 100%;
+    line-height: 32px;
+    background-color: #fff;
+    white-space: nowrap;
+    border-spacing: .2rem 0;
+}
+
+.title:before,
+.title:after {
+    display: table-cell;
+    content: '';
+    width: 50%;
+    background: -webkit-linear-gradient(#eee, #eee) repeat-x left center;
+    background: linear-gradient(#eee, #eee) repeat-x left center;
+    background-size: 0.1rem 0.1rem;
+} */
