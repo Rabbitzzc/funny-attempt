@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trade Winds', ;
+}
+
+html,
+body {
+  width: 100vw;
+  background: #f3f7fb;
+  background: #413c69;
+}
+
+.container {
+  margin: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.title {
+    color: #fff;
+    font-weight: 800;
+}
+.title a {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+a {
+    color: #3CDEE7;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* textbox  */
+/* 
+$primary-color: #F2F7FB;
+$key-corner: #E9F2FB;
+$shadow-color: #D9E3EC; */
+.textbox {
+  width: 100%;
+  resize: none;
+  background: linear-gradient(145deg, #f2f7fb, #e9f2fb);
+  box-shadow: inset 8px 8px 15px #d9e3ec;
+  border-radius: 12px;
+  border: none;
+  overflow: auto;
+  padding: 20px;
+  outline: none;
+  margin: 50px 0;
+}
+
+.container__content {
+  /* width: 60%; */
+}
+
+.keyboard {
+  padding: 25px;
+  background: linear-gradient(145deg, #f2f7fb, #e9f2fb);
+  box-shadow: inset 8px 8px 15px #d9e3ec;
+  border-radius: 12px;
+  min-width: 750px;
+  max-width: 1000px;
+}
+
+.keyboard__keys {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px #d9e3ec;
+  background: linear-gradient(145deg, #f2f7fb, #e9f2fb);
+}
+
+/* hover style */
+/* .key:hover {
+    box-shadow: 10px 10px 15px #c8d6e4;
+} */
+
+/* click  key-click */
+.key__down {
+    color: linear-gradient(45deg, #1E71F5, #3CDEE7);;
+    background: linear-gradient(145deg, #E9F2FB,  #F2F7FB);
+    box-shadow:  inset 5px 5px 5px #c8d6e4;
+  }
+
+.key__letter {
+  color: transparent;
+  background: -webkit-linear-gradient(245deg, #1e71f5, #3cdee7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+}
+
+.key__space {
+  width: 70%;
+}
